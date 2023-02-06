@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+.flagsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 320px;
+    background: #ebebeb;
+}
+
+.flagsContainer>div {
+    margin-top: 1em;
+}
+
+#japan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 300px;
+    height: 200px;
+}
+
+#japan::before {
+    content: '';
+    background: red;
+    width: 150px;
+    height: 150px;
+    clip-path: circle(75px);
+}
+
+#brazil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background: forestgreen;
+}
+
+#brazil::before {
+    display: flex;
+    position: absolute;
+    content: '';
+    background: yellow;
+    width: 250px;
+    height: 180px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#brazil::after {
+    position: absolute;
+    transform: translateX(1%);
+    content: '';
+    width: 120px;
+    height: 120px;
+    background: blue;
+    clip-path: circle(50%);
+}
+
+#chile{
+    display: flex;
+    background: red;
+    width: 300px;
+    height: 200px;
+    
+}
+
+#chile::after{
+    content: '';
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background: #fff;
+}
+
+#chile::before{
+    content: '';
+    background: blue;
+    width: 200px;
+    height: 100px;
+}
+
+#chileStar{
+    margin: 3px 10px;
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
